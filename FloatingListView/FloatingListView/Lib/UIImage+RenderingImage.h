@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImage+RenderingImage.h
 //  FloatingListView
 //
 //  Created by 李凯 on 2018/11/29.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImage (RenderingImage)
 
++ (instancetype)imageNameWithRenderingModeAlwaysOriginal: (NSString *)imageName;
 
 @end
-

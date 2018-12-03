@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A26130E521AFD88000C5AA36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A26130E421AFD88000C5AA36 /* AppDelegate.m */; };
-		A26130E821AFD88000C5AA36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26130E721AFD88000C5AA36 /* ViewController.m */; };
 		A26130EB21AFD88000C5AA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26130E921AFD88000C5AA36 /* Main.storyboard */; };
 		A26130ED21AFD88100C5AA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26130EC21AFD88100C5AA36 /* Assets.xcassets */; };
 		A26130F021AFD88100C5AA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26130EE21AFD88100C5AA36 /* LaunchScreen.storyboard */; };
 		A26130F321AFD88100C5AA36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A26130F221AFD88100C5AA36 /* main.m */; };
 		A26130FD21AFD88100C5AA36 /* FloatingListViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A26130FC21AFD88100C5AA36 /* FloatingListViewTests.m */; };
 		A261310821AFD88100C5AA36 /* FloatingListViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A261310721AFD88100C5AA36 /* FloatingListViewUITests.m */; };
+		A261311721AFDC1100C5AA36 /* LKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A261311621AFDC1100C5AA36 /* LKMainViewController.m */; };
+		A261311A21AFDC7300C5AA36 /* LKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A261311921AFDC7300C5AA36 /* LKBaseViewController.m */; };
+		A261312121AFE0B200C5AA36 /* UIImage+RenderingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A261312021AFE0B200C5AA36 /* UIImage+RenderingImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		A26130E021AFD88000C5AA36 /* FloatingListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingListView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26130E321AFD88000C5AA36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A26130E421AFD88000C5AA36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A26130E621AFD88000C5AA36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A26130E721AFD88000C5AA36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A26130EA21AFD88000C5AA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A26130EC21AFD88100C5AA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A26130EF21AFD88100C5AA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,13 @@
 		A261310321AFD88100C5AA36 /* FloatingListViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingListViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A261310721AFD88100C5AA36 /* FloatingListViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingListViewUITests.m; sourceTree = "<group>"; };
 		A261310921AFD88100C5AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A261311521AFDC1100C5AA36 /* LKMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKMainViewController.h; sourceTree = "<group>"; };
+		A261311621AFDC1100C5AA36 /* LKMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKMainViewController.m; sourceTree = "<group>"; };
+		A261311821AFDC7300C5AA36 /* LKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseViewController.h; sourceTree = "<group>"; };
+		A261311921AFDC7300C5AA36 /* LKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseViewController.m; sourceTree = "<group>"; };
+		A261311F21AFE0B200C5AA36 /* UIImage+RenderingImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RenderingImage.h"; sourceTree = "<group>"; };
+		A261312021AFE0B200C5AA36 /* UIImage+RenderingImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RenderingImage.m"; sourceTree = "<group>"; };
+		A261312321AFE1AD00C5AA36 /* LKConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKConst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +108,19 @@
 		A26130E221AFD88000C5AA36 /* FloatingListView */ = {
 			isa = PBXGroup;
 			children = (
+				A261312221AFE16E00C5AA36 /* Const */,
+				A261311B21AFE07800C5AA36 /* Lib */,
 				A26130E321AFD88000C5AA36 /* AppDelegate.h */,
 				A26130E421AFD88000C5AA36 /* AppDelegate.m */,
-				A26130E621AFD88000C5AA36 /* ViewController.h */,
-				A26130E721AFD88000C5AA36 /* ViewController.m */,
 				A26130E921AFD88000C5AA36 /* Main.storyboard */,
 				A26130EC21AFD88100C5AA36 /* Assets.xcassets */,
 				A26130EE21AFD88100C5AA36 /* LaunchScreen.storyboard */,
 				A26130F121AFD88100C5AA36 /* Info.plist */,
 				A26130F221AFD88100C5AA36 /* main.m */,
+				A261311521AFDC1100C5AA36 /* LKMainViewController.h */,
+				A261311621AFDC1100C5AA36 /* LKMainViewController.m */,
+				A261311821AFDC7300C5AA36 /* LKBaseViewController.h */,
+				A261311921AFDC7300C5AA36 /* LKBaseViewController.m */,
 			);
 			path = FloatingListView;
 			sourceTree = "<group>";
@@ -130,6 +141,23 @@
 				A261310921AFD88100C5AA36 /* Info.plist */,
 			);
 			path = FloatingListViewUITests;
+			sourceTree = "<group>";
+		};
+		A261311B21AFE07800C5AA36 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A261311F21AFE0B200C5AA36 /* UIImage+RenderingImage.h */,
+				A261312021AFE0B200C5AA36 /* UIImage+RenderingImage.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		A261312221AFE16E00C5AA36 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				A261312321AFE1AD00C5AA36 /* LKConst.h */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +222,7 @@
 		A26130D821AFD88000C5AA36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LK;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "李凯";
 				TargetAttributes = {
@@ -262,8 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26130E821AFD88000C5AA36 /* ViewController.m in Sources */,
+				A261311721AFDC1100C5AA36 /* LKMainViewController.m in Sources */,
 				A26130F321AFD88100C5AA36 /* main.m in Sources */,
+				A261311A21AFDC7300C5AA36 /* LKBaseViewController.m in Sources */,
+				A261312121AFE0B200C5AA36 /* UIImage+RenderingImage.m in Sources */,
 				A26130E521AFD88000C5AA36 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

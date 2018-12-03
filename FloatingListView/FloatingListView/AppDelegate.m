@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LKMainViewController.h"
+#import "LKConst.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[LKMainViewController new]];
+    [self.window makeKeyAndVisible];
+    
+    //设置导航栏
+    [UINavigationBar appearance].translucent = NO;
+    [[UINavigationBar appearance] setBarTintColor: LKBlueColor];
+    
+    //取消导航栏底部黑线
+    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc]init]];
+    
     return YES;
 }
 
