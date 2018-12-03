@@ -25,7 +25,7 @@
     
     //设置导航栏
     [UINavigationBar appearance].translucent = NO;
-    [[UINavigationBar appearance] setBarTintColor: LKBlueColor];
+    [[UINavigationBar appearance] setBarTintColor: kBlueColor];
     
     //取消导航栏底部黑线
     [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];

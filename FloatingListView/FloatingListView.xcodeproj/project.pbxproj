@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A220DE3421B4F916008B9605 /* LKFloatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A220DE3321B4F916008B9605 /* LKFloatListViewController.m */; };
+		A220DE3721B4FA5F008B9605 /* LKFloatListView.m in Sources */ = {isa = PBXBuildFile; fileRef = A220DE3621B4FA5F008B9605 /* LKFloatListView.m */; };
+		A220DE3A21B4FC1B008B9605 /* LKFloatListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A220DE3921B4FC1B008B9605 /* LKFloatListItem.m */; };
 		A26130E521AFD88000C5AA36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A26130E421AFD88000C5AA36 /* AppDelegate.m */; };
 		A26130EB21AFD88000C5AA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26130E921AFD88000C5AA36 /* Main.storyboard */; };
 		A26130ED21AFD88100C5AA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26130EC21AFD88100C5AA36 /* Assets.xcassets */; };
@@ -17,6 +20,7 @@
 		A261311721AFDC1100C5AA36 /* LKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A261311621AFDC1100C5AA36 /* LKMainViewController.m */; };
 		A261311A21AFDC7300C5AA36 /* LKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A261311921AFDC7300C5AA36 /* LKBaseViewController.m */; };
 		A261312121AFE0B200C5AA36 /* UIImage+RenderingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A261312021AFE0B200C5AA36 /* UIImage+RenderingImage.m */; };
+		B4C523CC395D939C37BDCF16 /* libPods-FloatingListView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 461B06F469A5B53EB87F1382 /* libPods-FloatingListView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CB9946AAE68E35C82283AD5 /* Pods-FloatingListView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingListView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingListView/Pods-FloatingListView.debug.xcconfig"; sourceTree = "<group>"; };
+		461B06F469A5B53EB87F1382 /* libPods-FloatingListView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FloatingListView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A220DE3221B4F916008B9605 /* LKFloatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFloatListViewController.h; sourceTree = "<group>"; };
+		A220DE3321B4F916008B9605 /* LKFloatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFloatListViewController.m; sourceTree = "<group>"; };
+		A220DE3521B4FA5F008B9605 /* LKFloatListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFloatListView.h; sourceTree = "<group>"; };
+		A220DE3621B4FA5F008B9605 /* LKFloatListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFloatListView.m; sourceTree = "<group>"; };
+		A220DE3821B4FC1B008B9605 /* LKFloatListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFloatListItem.h; sourceTree = "<group>"; };
+		A220DE3921B4FC1B008B9605 /* LKFloatListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFloatListItem.m; sourceTree = "<group>"; };
 		A26130E021AFD88000C5AA36 /* FloatingListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingListView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26130E321AFD88000C5AA36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A26130E421AFD88000C5AA36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 		A261311F21AFE0B200C5AA36 /* UIImage+RenderingImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RenderingImage.h"; sourceTree = "<group>"; };
 		A261312021AFE0B200C5AA36 /* UIImage+RenderingImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RenderingImage.m"; sourceTree = "<group>"; };
 		A261312321AFE1AD00C5AA36 /* LKConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKConst.h; sourceTree = "<group>"; };
+		FAA714F2EC4DB6A5D4A1639A /* Pods-FloatingListView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingListView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingListView/Pods-FloatingListView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C523CC395D939C37BDCF16 /* libPods-FloatingListView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +99,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		599430A69C515969A9955778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				461B06F469A5B53EB87F1382 /* libPods-FloatingListView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A220DE3121B4F8F2008B9605 /* FloatView */ = {
+			isa = PBXGroup;
+			children = (
+				A220DE3221B4F916008B9605 /* LKFloatListViewController.h */,
+				A220DE3321B4F916008B9605 /* LKFloatListViewController.m */,
+				A220DE3521B4FA5F008B9605 /* LKFloatListView.h */,
+				A220DE3621B4FA5F008B9605 /* LKFloatListView.m */,
+				A220DE3821B4FC1B008B9605 /* LKFloatListItem.h */,
+				A220DE3921B4FC1B008B9605 /* LKFloatListItem.m */,
+			);
+			path = FloatView;
+			sourceTree = "<group>";
+		};
 		A26130D721AFD88000C5AA36 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +127,8 @@
 				A26130FB21AFD88100C5AA36 /* FloatingListViewTests */,
 				A261310621AFD88100C5AA36 /* FloatingListViewUITests */,
 				A26130E121AFD88000C5AA36 /* Products */,
+				B27493FC4E2329AF6BDA9223 /* Pods */,
+				599430A69C515969A9955778 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +145,7 @@
 		A26130E221AFD88000C5AA36 /* FloatingListView */ = {
 			isa = PBXGroup;
 			children = (
+				A220DE3121B4F8F2008B9605 /* FloatView */,
 				A261312221AFE16E00C5AA36 /* Const */,
 				A261311B21AFE07800C5AA36 /* Lib */,
 				A26130E321AFD88000C5AA36 /* AppDelegate.h */,
@@ -160,6 +198,15 @@
 			path = Const;
 			sourceTree = "<group>";
 		};
+		B27493FC4E2329AF6BDA9223 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CB9946AAE68E35C82283AD5 /* Pods-FloatingListView.debug.xcconfig */,
+				FAA714F2EC4DB6A5D4A1639A /* Pods-FloatingListView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A261310C21AFD88100C5AA36 /* Build configuration list for PBXNativeTarget "FloatingListView" */;
 			buildPhases = (
+				0C21788595D977418A6DFFAC /* [CP] Check Pods Manifest.lock */,
 				A26130DC21AFD88000C5AA36 /* Sources */,
 				A26130DD21AFD88000C5AA36 /* Frameworks */,
 				A26130DE21AFD88000C5AA36 /* Resources */,
@@ -286,13 +334,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C21788595D977418A6DFFAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FloatingListView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A26130DC21AFD88000C5AA36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A220DE3421B4F916008B9605 /* LKFloatListViewController.m in Sources */,
 				A261311721AFDC1100C5AA36 /* LKMainViewController.m in Sources */,
 				A26130F321AFD88100C5AA36 /* main.m in Sources */,
+				A220DE3721B4FA5F008B9605 /* LKFloatListView.m in Sources */,
+				A220DE3A21B4FC1B008B9605 /* LKFloatListItem.m in Sources */,
 				A261311A21AFDC7300C5AA36 /* LKBaseViewController.m in Sources */,
 				A261312121AFE0B200C5AA36 /* UIImage+RenderingImage.m in Sources */,
 				A26130E521AFD88000C5AA36 /* AppDelegate.m in Sources */,
@@ -462,6 +534,7 @@
 		};
 		A261310D21AFD88100C5AA36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB9946AAE68E35C82283AD5 /* Pods-FloatingListView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +551,7 @@
 		};
 		A261310E21AFD88100C5AA36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA714F2EC4DB6A5D4A1639A /* Pods-FloatingListView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
