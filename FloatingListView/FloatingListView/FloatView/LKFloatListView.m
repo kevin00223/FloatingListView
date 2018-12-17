@@ -108,6 +108,8 @@
         [btn setImage:[UIImage imageNamed:item.imageName] forState:UIControlStateNormal];
         [btn setTitle:item.text forState:UIControlStateNormal];
         [btn setTitleColor:self.textColor forState:UIControlStateNormal];
+        btn.tag = i;
+        [btn addTarget:self action:@selector(btnDidSelected:) forControlEvents:UIControlEventTouchUpInside];
         [self.containerView addSubview:btn];
         [self.buttons addObject:btn];
         
@@ -119,6 +121,12 @@
         }
         
         i ++;
+    }
+}
+
+- (void)btnDidSelected: (UIButton *)sender {
+    if ([self.delegate respondsToSelector:@selector(floatListView:didSelectItemAtIndex:)]) {
+        [self.delegate floatListView:self didSelectItemAtIndex:sender.tag];
     }
 }
 

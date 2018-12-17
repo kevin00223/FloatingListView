@@ -12,7 +12,7 @@
 #import "LKFloatListItem.h"
 #import "LKConst.h"
 
-@interface LKMainViewController ()
+@interface LKMainViewController () <LKFloatListViewControllerProtocol>
 
 @end
 
@@ -38,9 +38,23 @@
     LKFloatListItem *secondeItem = [LKFloatListItem itemWithImageName:@"ic_add_group" text:@"添加群组"];
     
     LKFloatListViewController *floatListVC = [[LKFloatListViewController alloc]init];
+    floatListVC.delegate = self;
     [floatListVC setLocationWithPoint:CGPointMake(10, kStatusAndNavigationBarHeight+6) method:LKFloatListViewLocateMethodRightTop];
     floatListVC.items = @[firstItem, secondeItem];
     [self presentViewController:floatListVC animated:NO completion:nil];
+}
+
+- (void)floatListViewController:(LKFloatListViewController *)floatListViewController didSelectItemAtIndex:(NSInteger)index {
+    switch (index) {
+        case 0:
+            NSLog(@"跳转到添加朋友");
+            break;
+        case 1:
+            NSLog(@"跳转到添加群组");
+        default:
+            break;
+    }
+    [floatListViewController dismissViewControllerAnimated:NO completion:nil];
 }
 
 @end

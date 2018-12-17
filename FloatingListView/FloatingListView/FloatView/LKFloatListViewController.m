@@ -9,7 +9,7 @@
 #import "LKFloatListViewController.h"
 #import "LKFloatListView.h"
 
-@interface LKFloatListViewController ()
+@interface LKFloatListViewController () <LKFloatListViewProtocol>
 
 @end
 
@@ -26,8 +26,15 @@
 
 - (void)loadView {
     LKFloatListView *floatListView = [[LKFloatListView alloc]init];
+    floatListView.delegate = self;
     self.view = floatListView;
     [floatListView addTarget:self action:@selector(floatListViewDidSelect:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)floatListView:(LKFloatListView *)floatListView didSelectItemAtIndex:(NSInteger)index {
+    if ([self.delegate respondsToSelector:@selector(floatListViewController:didSelectItemAtIndex:)]) {
+        [self.delegate floatListViewController:self didSelectItemAtIndex:index];
+    }
 }
 
 - (void)setLocationWithPoint:(CGPoint)point method:(LKFloatListViewLocateMethod)method {
