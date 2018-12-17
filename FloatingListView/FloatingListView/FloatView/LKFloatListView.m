@@ -10,7 +10,7 @@
 #import "Masonry.h"
 #import "LKConst.h"
 
-#define floatListItemWidth 100  //不写固定值
+#define floatListItemWidth 120  //不写固定值
 #define floatListItemHeight 40
 
 @interface LKFloatListView ()
@@ -103,6 +103,8 @@
     int i = 0;
     for (LKFloatListItem *item in self.items) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 10);
+        btn.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
         [btn setImage:[UIImage imageNamed:item.imageName] forState:UIControlStateNormal];
         [btn setTitle:item.text forState:UIControlStateNormal];
         [btn setTitleColor:self.textColor forState:UIControlStateNormal];
