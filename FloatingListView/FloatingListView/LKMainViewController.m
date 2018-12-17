@@ -40,7 +40,7 @@
     LKFloatListViewController *floatListVC = [[LKFloatListViewController alloc]init];
     [floatListVC setLocationWithPoint:CGPointMake(10, kStatusAndNavigationBarHeight+6) method:LKFloatListViewLocateMethodRightTop];
     floatListVC.items = @[firstItem, secondeItem];
-    [self presentViewController:floatListVC animated:YES completion:nil];
+    [self presentViewController:floatListVC animated:NO completion:nil];
 }
 
 @end

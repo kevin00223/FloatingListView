@@ -36,7 +36,7 @@
 }
 
 - (void)floatListViewDidSelect: (UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (void)setItems:(NSArray<LKFloatListItem *> *)items {
