@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, LKFloatListViewLocateMethod) {
+    LKFloatListViewLocateMethodRightTop = 0
+};
+
 @interface LKFloatListItem : NSObject
 
 @property (nonatomic, copy) NSString *imageName;

@@ -13,4 +13,6 @@
 
 @property (nonatomic, copy) NSArray<LKFloatListItem *> *items;
 
+- (void)setLocationWithPoint: (CGPoint)point method: (LKFloatListViewLocateMethod)method;
+
 @end

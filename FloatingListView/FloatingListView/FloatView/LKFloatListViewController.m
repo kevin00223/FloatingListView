@@ -30,6 +30,11 @@
     [floatListView addTarget:self action:@selector(floatListViewDidSelect:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)setLocationWithPoint:(CGPoint)point method:(LKFloatListViewLocateMethod)method {
+    LKFloatListView *floatListView = (LKFloatListView *)self.view;
+    [floatListView locateFloatListViewAtPoint:point method:method];
+}
+
 - (void)floatListViewDidSelect: (UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

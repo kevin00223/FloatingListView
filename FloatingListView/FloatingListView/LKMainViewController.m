@@ -10,6 +10,7 @@
 #import "UIImage+RenderingImage.h"
 #import "LKFloatListViewController.h"
 #import "LKFloatListItem.h"
+#import "LKConst.h"
 
 @interface LKMainViewController ()
 
@@ -37,6 +38,7 @@
     LKFloatListItem *secondeItem = [LKFloatListItem itemWithImageName:@"ic_add_group" text:@"添加群组"];
     
     LKFloatListViewController *floatListVC = [[LKFloatListViewController alloc]init];
+    [floatListVC setLocationWithPoint:CGPointMake(10, kStatusAndNavigationBarHeight+6) method:LKFloatListViewLocateMethodRightTop];
     floatListVC.items = @[firstItem, secondeItem];
     [self presentViewController:floatListVC animated:YES completion:nil];
 }

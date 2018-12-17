@@ -23,6 +23,9 @@
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, strong) UIColor *lineColor;
 
+@property (nonatomic, assign) CGPoint point;
+@property (nonatomic, assign) LKFloatListViewLocateMethod method;
+
 @end
 
 @implementation LKFloatListView
@@ -56,12 +59,19 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(kStatusAndNavigationBarHeight + 6);
-        make.right.equalTo(self).offset(-10);
-        make.width.offset(floatListItemWidth+20);
-        make.height.offset(self.items.count * floatListItemHeight);
-    }];
+    switch (self.method) {
+        case LKFloatListViewLocateMethodRightTop: {
+            [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self).offset(self.point.y);
+                make.right.equalTo(self).offset(-self.point.x);
+                make.width.offset(floatListItemWidth+20);
+                make.height.offset(self.items.count * floatListItemHeight);
+            }];
+        }
+            break;
+        default:
+            break;
+    }
     
     int i = 0;
     for (UIButton *button in self.buttons) {
@@ -82,24 +92,12 @@
     [self setNeedsLayout];
 }
 
-//- (void)setFloatViewBackgroundColor:(UIColor *)floatViewBackgroundColor {
-//    _floatViewBackgroundColor = floatViewBackgroundColor;
-//    self.containerView.backgroundColor = self.floatViewBackgroundColor;
-//}
-
-//- (void)setTextColor:(UIColor *)textColor {
-//    _textColor = textColor;
-//    for (UIButton *btn in self.buttons) {
-//        [btn setTitleColor:self.textColor forState:UIControlStateNormal];
-//    }
-//}
-
-//- (void)setLineColor:(UIColor *)lineColor {
-//    _lineColor = lineColor;
-//    for (UIView *line in self.lines) {
-//        line.backgroundColor = self.lineColor;
-//    }
-//}
+- (void)locateFloatListViewAtPoint:(CGPoint)point method:(LKFloatListViewLocateMethod)method {
+    self.point = point;
+    self.method = method;
+    
+    [self setNeedsLayout];
+}
 
 - (void)resetSubviews {
     int i = 0;
